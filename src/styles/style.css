@@ -1,0 +1,75 @@
+/** CSS STYLE **/
+:root {
+    --white: #fff;
+    --cloudy-white: #d7ccc0;
+    --light: #f5f4f0;
+    --main-color: #fe8a02;
+    --main-color-dark: #42413c;
+    --dark: #2a2626;
+    --cloudy-dark: #908d8b;
+    --brown: #b09a81;
+    --blue: #1085c5;
+
+   
+}
+
+header::before {
+    content: url(styles/cognitive-biases-images/images/background.png)
+     }
+.back {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    }
+
+    section {
+        position: relative;
+        top: 5px;
+        left: 5px;
+
+        width: 1110px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 100px;
+        margin-left: 100px;
+
+        background-color: var(--cloudy-dark);
+    }
+
+h1 {
+    font-family: Neucha;
+    font-size: 72px;
+    line-height: 1.2em;
+    color: var(--main-color);
+}
+
+.picture1 {
+    position: absolute;
+    height: 525px;
+    top: 55px;
+    right: -270px;
+}
+
+.flex-container {
+    display: flex;
+    }
+
+.flex-container div {
+  display: flex;  
+  justify-content: flex-end;
+  width: 350px;
+  box-sizing: border-box;
+  
+  padding: 5px;
+
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  color: var(--dark);
+};
+
+.f-c-2 {
+    margin-right: 30px;
+}
+
