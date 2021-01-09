@@ -12,69 +12,98 @@
  
 }
 
-.container::before {
+
+body {
+    color: var(--dark);
+    font-family: 'Open Sans', cursive;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.bg-image {
+    position: relative;
+    
+}
+
+.bg-image:before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100px;
+    left: 0;
 
     width: 100%;
     height: 100%;
 
     background-image: url(styles/cognitive-biases-images/images/background.png);
-    opacity: 0.9;
+    opacity: 90%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container {
+.container1 {
     position: relative;
     width: 1110px;
-    
-    margin-left: 100px;
-
-    font-family: Open Sans;
-    font-size: 16px;
-    line-height: 1.6em;
-    color: var(--dark);
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    z-index: 200;
 }
 
+.title {
+    position: relative;
+    z-index: 200;
+}
+
+
 h1 {
-    font-family: Neucha;
+    font-family: 'Neucha', cursive;
     font-size: 72px;
     line-height: 1.2em;
     color: var(--main-color);
 }
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 1.2em;
+    font-family: 'Neucha', cursive;
+          
+}
+h3 {
+    font-family: 'Neucha', cursive;
+    font-size: 34px;
+    line-height: 1.2em;
+      
+}
+
+.menu-item>h3 {
+    color: var(--main-color);
+
+}
+
 
 .picture1 {
     position: absolute;
     height: 525px;
     top: 55px;
     right: -270px;
+    z-index: 100;
 }
 
-.flex-container {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
 
-.flex-container div {
-  display: flex;  
-  justify-content: flex-end;
-  width: 50%;
-  box-sizing: border-box;
-  
-  padding: 5px;
-  text-align: left;
-  
-};
+.column {
+    width: 50%;
+    text-align: left;
 
-.f-c-1 {
-    margin-right: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    
 }
 
 .button {
+
     position: absolute;
     top: 700px;
     left: 570px;
@@ -88,74 +117,58 @@ h1 {
     color: var(--white);
     background-color: var(--main-color);
     
-  }
+}
 
-  h2 {
-      margin-bottom: 30px;
+.video {
+
+    position: relative;
+    display: flex;
+    align-items: center;  
+    margin: 0 auto;   
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    z-index: 200;
+    
+}
+
+#navigation {
+
+    position: relative;
+    background: var(--main-color-dark);
+    margin-top: -200px;
       
-      font-size: 60px;
-      line-height: 1.2em;
-      font-family: "Neucha";
-      text-align: center;
-     
-    }
+}
 
-    .section2 {
-        position: relative;
-        margin-left: 100px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+.flex-menu {
 
-    }
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
 
-    .section1 {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    
-    }
+} 
+  
+.flex-menu div {
+    width: 30%;
+    margin: 5px;
 
-    .video {
-        margin-left: 150px;
-        
-        filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-    }
-    
-    .section3 {
-        width: 1110px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        height: 100%;
-        padding-bottom: 50px;
-        background-color: var(--dark);
+}
 
-    }
-
-    #navigation {
-     display: flex;
-     flex-wrap: wrap;   
-     justify-content: space-around;
-     align-items: stretch;
-    }
-
-    .nav-item {
-        display: flex;
-
+    .menu-item {
         box-sizing: border-box;
-        width: 30%;
-        align-items: stretch;
-        
         padding: 24px;
-        margin: 30px 10px;
-        background-color: var(--white);
+        
+        background: var(--white);
+        color: var(--main-color);
+        font-family: 'Neucha', cursive;
+        text-align: left;
 
     }
-
-    .menu{
-        display: flex;
-
-        background-color: var(--dark);
-        font-size: 52px;
-        color: var(--main-color);
+    .bg-dark {
+        background: var(--main-color-dark);
+        margin-left: 0;
+        padding: 0;
+        font-size: 45px;
+        line-height: 1.2em;
 
     }
 
@@ -163,26 +176,128 @@ h1 {
         padding-bottom: 40px;
 
         font-size: 64px;
-        font-family: Neucha;
+        font-family: 'Neucha', cursive;
         line-height: 1;
 
     }
 
-    h3 {
-        font-size: 34px;
-        color: var(--main-color);
-
-    }
-
+        
     a:hover, a:active {
-        background-color: var(--white);
-        background-color: var(--cloudy-dark);
-
+       
+        background-color: var(--main-color);
+        color: var(--white);
     }
 
     a {
+        display: block;
+        box-sizing: border-box;
         text-decoration: none;
         color: var(--dark);
         
     }
+
+    .menu-item > p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+
+
+    #ikea-effect {
+        position: relative;
+        background: var(--light);
+
+    }
+
+
+    .flex-section {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        position: relative;
+        z-index: 200;
+        margin-left: -15px;
+        margin-right: -15px;
+
+    }
+
+    .flex-section div {
+        padding: 15px;
+
+    }
+
+    .image {
+        vertical-align: middle;
+    
+    }
+
+    h6 {
+        font-family: 'Open Sans' sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 17px;
+        font-weight: bold;
+
+    }
+
+    .bg-brown {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        
+        background: var(--brown);
+        color: var(--white);
+        
+    }
+
+    .h4 {
+        font-family: 'Neucha', cursive;
+        font-size: 24px;
+        color: var(--cloudy);
+
+    }
+
+    #premature-optimization {
+        position: relative;
+        background: var(--brown);
+        color: var(--white);
+
+    }
+
+    .bg-white {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        
+        background: var(--white);
+        color: var(--brown);
+    }
+
+    #distortion-of-novelty {
+        position: relative;
+        background: var(--light);
+        color: var(--dark);
+    }
+
+    #hyperbolic-depreciation {
+        position: relative;
+        background: var(--brown);
+        color: var(--white);
+
+    }
+
+    #errors-in-planning {
+        position: relative;
+        background: var(--light);
+        color: var(--dark);
+
+    }
+    
+    .section1 {
+        background: var(--light);
+
+    }
+
+    
+
+
+
 
