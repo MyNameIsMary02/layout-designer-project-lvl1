@@ -46,11 +46,14 @@ h5,
 h1 {
   color: var(--main-color);
   font-size: 72px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h2,
 .h2 {
   margin-bottom: 30px;
+  margin-top: 0;
 
   font-size: 60px;
 }
@@ -62,23 +65,26 @@ h3,
 
 h4,
 .h4 {
-  color: var(--cloudy-white);
+  color: var(--cloudy-dark);
   font-size: 24px;
 }
 
 .h5 {
   padding-top: 38px;
+  padding-bottom: 9px;
 
   font-size: 18px;
 }
 
 h6 {
   margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 5px 10px;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -106,7 +112,7 @@ header {
   width: 100%;
   height: 100%;
 
-  background-image: url(images/background.png);
+  background-image: url(/images/background.png);
 
   background-repeat: no-repeat;
 
@@ -147,12 +153,14 @@ header {
   z-index: 100;
 
   height: 525px;
+
+  width: 1082px;
 }
 
 .flex-section1 {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 110px;
+  margin-top: 185px;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -176,8 +184,10 @@ header {
 
   color: var(--white);
   font-weight: bold;
-  font-variant: small-caps;
+  
   text-align: center;
+
+  text-transform: uppercase;
 
   text-decoration: none;
 
@@ -232,7 +242,7 @@ header {
 
   text-align: left;
 
-  background: var(--white);
+  background: var(--light);
 }
 
 .bg-dark {
@@ -398,7 +408,7 @@ header {
 }
 
 input {
-  width: 438px;
+  width: 423px;
   height: 50px;
   margin: 0;
   padding: 0;
@@ -424,7 +434,7 @@ input {
   top: 15px;
   right: 25px;
 
-  content: url(images/send.svg);
+  content: url(/images/send.svg);
 }
 
 form {
@@ -441,4 +451,8 @@ form {
   line-height: 160%;
 
   text-align: center;
+}
+
+.contact-info a {
+  color: var(--blue);
 }
